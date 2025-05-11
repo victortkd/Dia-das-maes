@@ -46,7 +46,7 @@
       border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background 0.5s ease;
     }
 
     button:hover {
@@ -96,11 +96,6 @@
   </style>
 </head>
 <body>
-  <button onclick="document.getElementById('audioFundo').play()">Toque uma música 🎵</button>
-
-  <audio id="audioFundo" loop>
-   <source src="musica.mp3" type="audio/mpeg">
-  </audio>
   <h1>💖 Feliz Dia das Mães! 💖</h1>
 
   <p>
@@ -108,6 +103,11 @@
   </p>
   
 
+  <button onclick="document.getElementById('audioFundo').play()">Toque uma música 🎵</button>
+
+  <audio id="audioFundo" loop>
+   <source src="musica.mp3" type="audio/mpeg">
+  </audio>
   <button onclick="mostrarMensagem()">Clique para uma surpresa</button>
 
   

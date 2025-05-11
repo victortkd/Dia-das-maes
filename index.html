@@ -101,11 +101,16 @@
   <p>
     Mãe, você é a razão do nosso sorriso todos os dias. Obrigado por tanto amor, carinho e dedicação!
   </p>
-  <audio autoplay loop>
-    <source src="musica.mp3" type="audio/mpeg">
-  </audio>
+  
 
   <button onclick="mostrarMensagem()">Clique para uma surpresa</button>
+  <button onclick="document.getElementById('audioFundo').play()">Toque uma música 🎵</button>
+
+<audio id="audioFundo" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
   
 
   <div class="hidden-content" id="conteudoExtra">

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Dia das Mães</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe3e3, #ffd6d6);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #d6336c;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    button {
+      background-color: #fa5252;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e03131;
+    }
+
+    .hidden-content {
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .imagem-mae {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .versiculo {
+      font-style: italic;
+      font-size: 1rem;
+      color: #555;
+      margin-top: 15px;
+    }
+
+    .message-final {
+      margin-top: 25px;
+      font-size: 1.4rem;
+      color: #6741d9;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Feliz Dia das Mães! 💖</h1>
+
+  <p>
+    Mãe, você é a razão do nosso sorriso todos os dias. Obrigado por tanto amor, carinho e dedicação!
+  </p>
+  <audio autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button onclick="mostrarMensagem()">Clique para uma surpresa</button>
+  
+
+  <div class="hidden-content" id="conteudoExtra">
+     <img class="imagem-mae" src="imagem.png" alt="Mãe e filho em PNG" />
+
+
+
+    <div class="versiculo">
+      "Ensina a criança no caminho em que deve andar, e ainda quando for velho não se desviará dele." <br>
+      — Provérbios 22:6
+    </div>
+
+    
+    <div class="message-final">Você é a melhor mãe do mundo! 🌷🌟</div>
+
+    
+    <div class="reflexao">
+      Ser mãe é mais do que dar à luz — é entregar o coração todos os dias, sem reservas. <br>
+      É chorar escondido e sorrir com o coração, mesmo nos dias difíceis. <br>
+      É ensinar pelo exemplo, proteger com o olhar e amar sem esperar nada em troca. <br>
+      Eu como filho, sou muito grato pela mãe que eu tenho. <br>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      const conteudo = document.getElementById('conteudoExtra');
+      conteudo.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
